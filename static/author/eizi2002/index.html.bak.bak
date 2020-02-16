@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://eizi2002.ie-t.net/styles.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>eizi2002 - eizi2002@Home</title>
+  <meta name="generator" content="Movable Type Pro 7.1.1">
+  <meta name="description" content="eizi2002こと英治によるホームページ">
+  <meta name="keywords" content="eizi2002,eizi2002@home,英治,レイエス">
+  <link rel="shortcut icon" href="https://eizi2002.ie-t.net/02b7c86c6a51b5c2a01029d298f183d8e57e7c1f.ico">
+  <link rel="start" href="https://eizi2002.ie-t.net/">
+  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://eizi2002.ie-t.net/atom.xml">
+  <link rel="canonical" href="https://eizi2002.ie-t.net/author/eizi2002/" />
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="eizi2002 - eizi2002@Home">
+  <meta property="og:url" content="https://eizi2002.ie-t.net/author/eizi2002/">
+  <meta property="og:description" content="eizi2002こと英治によるホームページ">
+  <meta property="og:site_name" content="eizi2002@Home">
+  
+  <meta property="fb:app_id" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@eizi2002">
+  <meta name="twitter:title" content="eizi2002 - eizi2002@Home">
+  <meta name="twitter:description" content="eizi2002こと英治によるホームページ">
+  
+  <!-- Microdata -->
+  <meta itemprop="description" content="eizi2002こと英治によるホームページ">
+  <link itemprop="url" href="https://eizi2002.ie-t.net/author/eizi2002/">
+  
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <!-- Google アナリティクスのトラッキングコードを記述してください。 -->
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://eizi2002.ie-t.net/index.xml" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87433732-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-87433732-6');
+</script>
+
+<link rel="stylesheet" href="https://eizi2002.ie-t.net/mtb/mt-static/plugins/TableOfContents/css/styles.css" type="text/css" title="TOC" media="screen,tv" />
+<script src="https://eizi2002.ie-t.net/mtb/mt-static/plugins/TableOfContents/js/jquery.toc.js"></script>
+<script>
+$(function(){
+    var div = $('<div id="toc"></div>');
+    $(".asset-body").prepend(div);
+    $(".asset-body").toc({
+        startLevel: "h2"
+    });
+});
+</script>
+
+
+</head>
+<body>
+  <header class="header-lower">
+  <div class="inner clearfix">
+    
+    <h1><a href="https://eizi2002.ie-t.net/"><img src="https://eizi2002.ie-t.net/new_2002.jpg" alt="eizi2002@Home"></a></h1>
+    <span id="responsive-menu-button"></span>
+    
+    <nav role="navigation" id="globalnavi">
+      <div id="navi-content">
+        <ul>
+          <li><a href="https://eizi2002.ie-t.net/about.html">このサイトについて</a></li><li><a href="https://eizi2002.ie-t.net/una-ime.html">Una-IME(ウナ辞書)</a></li><li><a href="https://eizi2002.ie-t.net/social.html">social</a></li><li><a href="https://eizi2002.ie-t.net/contents.html">contents</a></li><li><a href="https://eizi2002.ie-t.net/privacypolicy/">プライバシーポリシー</a></li><li><a href="https://eizi2002.ie-t.net/disclaimer/">免責事項</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <section id="breadcrumb" class="breadcrumb-navi">
+    <div class="inner">
+      <a href="https://eizi2002.ie-t.net/">TOP</a>&nbsp;&gt;&nbsp;eizi2002
+    </div>
+  </section>
+  <!-- content: start -->
+  <div id="content" class="clearfix">
+    <div id="main-wrapper">
+      <main role="main">
+        <h1 class="page-title">&ldquo;eizi2002&rdquo;の記事一覧</h1>
+
+          <section class="entry-author-detail">
+            <div class="entry-author-detail-header">
+              <p class="title">プロフィール</p>
+            </div>
+
+            <div class="entry-author-detail-body clearfix">
+              <figure>
+                <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="90" height="90" title="eizi2002">
+              </figure>
+              <div class="entry-author-detail-body-text">
+                <p class="name"><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+                <div class="profile">
+                そこら辺の沼にハマった人間。
+最近はMovableTypeだの小説だのぷよクエだのにハマってますね。
+                </div>
+              </div>
+            </div>
+
+            <ul class="entry-author-buttons">
+              <li><a href="https://eizi2002.ie-t.net/author/eizi2002/"><img src="https://eizi2002.ie-t.net/images/prof_own.png" alt="アーカイブ" title="eizi2002の記事一覧"></a></li></mt:If>
+              <li><a href="https://eizi2002.ie-t.net/"><img src="https://eizi2002.ie-t.net/images/prof_home.png" alt="Website" title="eizi2002のウェブサイト"></a></li>
+            <li><a href="//facebook.com/eizi2002c"><img src="https://eizi2002.ie-t.net/images/prof_facebook.png" alt="facebook" title="facebook"></a></li>
+<li><a href="//twitter.com/eizi2002"><img src="https://eizi2002.ie-t.net/images/prof_twitter.png" alt="twitter" title="twitter"></a></li>
+            </ul>
+         </section>
+
+        <section id="top-entries" class="entrylist">
+          <ul class="clearfix" id="block-entries">
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2019/02/post-12.html" class="image"><img src="/images/noimage-448.png" alt="サイト再構築(完了)のお知らせ"></a>
+      <a href="https://eizi2002.ie-t.net/cat1/" class="label category">重要</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2019-02-28T23:12:06+09:00">2019年2月28日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2019/02/post-12.html">サイト再構築(完了)のお知らせ</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2018/09/post-11.html" class="image"><img src="/images/noimage-448.png" alt="プライバシーポリシー制定のお知らせ"></a>
+      <a href="https://eizi2002.ie-t.net/cat8/" class="label category">お知らせ</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2018-09-12T01:13:03+09:00">2018年9月12日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2018/09/post-11.html">プライバシーポリシー制定のお知らせ</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2018/08/post-10.html" class="image"><img src="/images/noimage-448.png" alt="サイト移転しました"></a>
+      <a href="https://eizi2002.ie-t.net/cat1/" class="label category">重要</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2018-08-21T16:00:33+09:00">2018年8月21日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2018/08/post-10.html">サイト移転しました</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2018/02/post-9.html" class="image"><img src="/images/noimage-448.png" alt="久々のチャレ部"></a>
+      <a href="https://eizi2002.ie-t.net/cat5/" class="label category">日記</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2018-02-15T00:00:39+09:00">2018年2月15日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2018/02/post-9.html">久々のチャレ部</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2017/11/icon.html" class="image"><img src="/images/noimage-448.png" alt="今までのアイコン"></a>
+      <a href="https://eizi2002.ie-t.net/cat7/" class="label category">まとめ(ツイートまとめ基本)</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2017-11-01T00:00:54+09:00">2017年11月 1日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2017/11/icon.html">今までのアイコン</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2017/08/10.html" class="image"><img src="/images/noimage-448.png" alt="初音ミク10周年"></a>
+      <a href="https://eizi2002.ie-t.net/cat6/" class="label category">未分類</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2017-08-31T00:00:23+09:00">2017年8月31日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2017/08/10.html">初音ミク10周年</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2017/08/post-8.html" class="image"><img src="/images/noimage-448.png" alt="マテリアルテスト"></a>
+      <a href="https://eizi2002.ie-t.net/cat6/" class="label category">未分類</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2017-08-26T22:50:21+09:00">2017年8月26日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2017/08/post-8.html">マテリアルテスト</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2017/08/post-7.html" class="image"><img src="/images/noimage-448.png" alt="五時間超生放送してた話"></a>
+      <a href="https://eizi2002.ie-t.net/cat6/" class="label category">未分類</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2017-08-03T22:44:12+09:00">2017年8月 3日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2017/08/post-7.html">五時間超生放送してた話</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2017/06/chrome.html" class="image"><img src="https://eizi2002.ie-t.net/assets_c/2019/03/31abaec122ef5232e929e25ef398620d-thumb-480xauto-9.png" alt="音街ウナのChromeテーマをおもむろに作ったお話"></a>
+      <a href="https://eizi2002.ie-t.net/cat4/" class="label category">その他</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2017-06-10T22:30:49+09:00">2017年6月10日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2017/06/chrome.html">音街ウナのChromeテーマをおもむろに作ったお話</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2016/10/post-3.html" class="image"><img src="/images/noimage-448.png" alt="音屋"></a>
+      <a href="https://eizi2002.ie-t.net/cat5/" class="label category">日記</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2016-10-22T22:36:05+09:00">2016年10月22日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2016/10/post-3.html">音屋</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2016/08/post-5.html" class="image"><img src="/images/noimage-448.png" alt="アイコンその２"></a>
+      <a href="https://eizi2002.ie-t.net/cat5/" class="label category">日記</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2016-08-17T17:34:04+09:00">2016年8月17日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2016/08/post-5.html">アイコンその２</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2016/08/post-4.html" class="image"><img src="/images/noimage-448.png" alt="アイコン"></a>
+      <a href="https://eizi2002.ie-t.net/cat5/" class="label category">日記</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2016-08-17T16:12:40+09:00">2016年8月17日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2016/08/post-4.html">アイコン</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2016/07/post.html" class="image"><img src="/images/noimage-448.png" alt="動画投稿したぞ"></a>
+      <a href="https://eizi2002.ie-t.net/cat3/" class="label category">動画投稿なう</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2016-07-30T12:34:26+09:00">2016年7月30日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2016/07/post.html">動画投稿したぞ</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+              <li>
+  <article>
+    <figure class="entry-image">
+      <a href="https://eizi2002.ie-t.net/2016/05/hello-world.html" class="image"><img src="/images/noimage-448.png" alt="Hello world!"></a>
+      <a href="https://eizi2002.ie-t.net/uncategorized/" class="label category">Uncategorized</a>
+    </figure>
+    <div class="entry-detail clearfix">
+      <div class="entry-meta clearfix">
+        <div class="entry-author">
+          <figure>
+            <a href="https://eizi2002.ie-t.net/author/eizi2002/">
+              <img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" width="40px" alt="eizi2002" title="eizi2002">
+            </a>
+          </figure>
+          <p><a href="https://eizi2002.ie-t.net/author/eizi2002/">eizi2002</a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="2016-05-10T12:48:21+09:00">2016年5月10日</time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="https://eizi2002.ie-t.net/2016/05/hello-world.html">Hello world!</a>
+      </div>
+    </div>
+  </article>
+</li>
+
+            
+          </ul>
+        </section>
+      </main>
+    </div>
+    <aside>
+      <div class="google-search">
+  <script>
+    (function() {
+      var cx = '017150135856073556764:6lgwryysaf8';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+</div>
+
+<a href="https://eizi2002.ie-t.net/index.xml">RSS 2.0</a>
+
+<section id="side-about" class="textbox">
+  <h1>このサイトについて</h1>
+  <p>このサイトは Movable Type デザインテーマ「Rimo」で作成されてい...</p>
+</section>
+
+
+<section id="side-members" class="memberlist">
+  <nav>
+    <h1>メンバー</h1>
+    
+      <ul class="clearfix">
+        <li><a href="https://eizi2002.ie-t.net/author/eizi2002/"><img src="https://eizi2002.ie-t.net/mtb/mt-static/support/assets_c/userpics/userpic-1-100x100.png" alt="eizi2002" width="50px" title="eizi2002"></a></li>
+      </ul>
+    
+  </nav>
+</section>
+
+
+
+<section id="side-recentpost" class="categorylist"><section id="side-categories" class="categorylist">
+  <nav>
+  <h1>カテゴリ</h1>
+  <ul>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/uncategorized/">Uncategorized</a><small>1</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat8/">お知らせ</a><small>2</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat4/">その他</a><small>3</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat7/">まとめ(ツイートまとめ基本)</a><small>1</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat3/">動画投稿なう</a><small>1</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat5/">日記</a><small>4</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat6/">未分類</a><small>3</small>
+      
+      
+      </li>
+      
+      
+      <li><a href="https://eizi2002.ie-t.net/cat1/">重要</a><small>2</small>
+      
+      
+      </li>
+      
+  </ul>
+  
+</nav>
+</section>
+
+
+  
+  <section id="side-categories" class="categorylist">
+  <nav>
+    <h1>月別アーカイブ</h1>
+    <ul>
+  
+      <li><a href="https://eizi2002.ie-t.net/2019/02/">2019年2月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2018/09/">2018年9月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2018/08/">2018年8月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2018/02/">2018年2月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2017/11/">2017年11月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2017/08/">2017年8月</a><small>3</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2017/06/">2017年6月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2016/10/">2016年10月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2016/08/">2016年8月</a><small>2</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2016/07/">2016年7月</a><small>1</small></li>
+  
+
+  
+      <li><a href="https://eizi2002.ie-t.net/2016/05/">2016年5月</a><small>1</small></li>
+   
+    </ul>   
+  </nav>
+  </section>
+  
+
+
+<section id="side-likebox">
+  <!-- Facebook の Page Plugin のコードを記述してください。  -->
+</section>
+
+    </aside>
+  </div>
+  <!-- content: end -->
+  <footer>
+    <div class="inner clearfix">
+      <div class="footer-top-container clearfix">
+        <section id="footer-about">
+          <h1>各種事項</h1>
+          <div class="footer-logo clearfix">
+          <a href="https://eizi2002.ie-t.net/privacypolicy">プライバシーポリシー</a>|<a href="https://eizi2002.ie-t.net/disclaimer">免責事項</a>
+          </div>
+        </section>
+        <section id="footer-social">
+          <div class="footer-social-buttons">
+  <ul>
+    
+      <li class="facebook">
+        <div class="fb-like"
+          data-href="https://eizi2002.ie-t.net/"
+          data-send="false"
+          data-layout="button_count"
+          data-width="130"
+          data-show-faces="false"
+          data-font="lucida grande">
+        </div>
+        <div id="fb-root">
+        </div>
+      </li>
+    
+
+  
+    <li class="entry-social-twitter">
+      <a href="https://twitter.com/share"
+        class="twitter-share-button"
+        data-lang="ja"
+        
+        data-via="eizi2002"
+        
+        data-count="vertical">ツイート
+      </a>
+    </li>
+  
+
+    
+      <li class="hatena">
+        <a href="http://b.hatena.ne.jp/entry/https://eizi2002.ie-t.net/"
+          class="hatena-bookmark-button"
+          data-hatena-bookmark-title="eizi2002@Home"
+          data-hatena-bookmark-layout="standard"
+          title="このエントリーをはてなブックマークに追加">
+          <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+            alt="このエントリーをはてなブックマークに追加"
+            width="20"
+            height="20"
+            style="border: none;">
+        </a>
+      </li>
+    
+
+    
+      <li class="google">
+        <div class="g-plusone"
+          data-size="medium"
+          data-href="https://eizi2002.ie-t.net/">
+        </div>
+      </li>
+    
+
+    
+      <li class="pocket">
+        <a href="https://getpocket.com/save"
+          class="pocket-btn"
+          data-lang="en"
+          data-save-url="https://eizi2002.ie-t.net/"
+          data-pocket-count="horizontal">
+          Pocket
+        </a>
+      </li>
+    
+
+    
+      <li class="line">
+        <span>
+          <div class="line-it-button" style="display: none;" data-type="share-a" data-lang="ja"></div>
+          <script src="//scdn.line-apps.com/n/line_it/thirdparty/loader.min.js" async="async" defer="defer"></script>
+        </span>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div id="fb-root"></div>
+  <script type="text/javascript">
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+
+  <script type="text/javascript">
+  !function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
+  </script>
+
+
+
+  <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+  </script>
+
+
+
+  <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+
+  <script type="text/javascript">
+  !function(d, i) {
+    if (!d.getElementById(i)) {
+      var j = d.createElement("script");
+      j.id = i;
+      j.src = "https://widgets.getpocket.com/v1/j/btn.js?v=1";
+      var w = d.getElementById(i);
+      d.body.appendChild(j);
+    }
+  }(document, "pocket-btn-js");
+  </script>
+
+
+        </section>
+      </div>
+      <section class="footer-copyright">
+        <p><a class="footer-name" href="https://eizi2002.ie-t.net">©eizi2002</a> All Rights Reserved.</p>
+      </section>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://eizi2002.ie-t.net/main.js"></script>
+  
+
+</body>
+</html>

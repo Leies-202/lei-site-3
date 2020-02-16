@@ -1,3 +1,167 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://lei202.com"
+languageCode = "ja-jp"
+defaultContentLanguage = "ja"
+title = "lei202.com"
+theme = "hermit"
+#enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+googleAnalytics = "UA-87433732-12"
+disqusShortname = "lei202-com"
+
+[markup.goldmark.renderer]
+	unsafe = true
+
+[author]
+  name = "Leies"
+
+[blackfriday]
+  hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+[frontmatter]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
+  # Metadata mostly used in document's head
+  description = "Misskeyに沈んだメガネのサイト"
+  images = ["avater2.png"]
+  themeColor = "#494f5c"
+
+  homeSubtitle = "Misskeyに沈んだメガネのサイト"
+  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  bgImg = "avater2.png"  # Homepage background-image URL
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+gitUrl = "https://github.com/lei202/leies-site-2/"
+
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = false  # Set "text-align: justify" to `.content`.
+
+  # Add custom css
+  # customCSS = ["css/foo.css", "css/bar.css"]
+
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "misskey"
+    url = "https://misskey.lei202.com/@lei202/"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/Leies-202/"
+
+  [[params.social]]
+    name = "soundcloud"
+    url = "https://soundcloud.com/leies202/"
+
+  [[params.social]]
+    name = "niconico"
+    url = "https://www.nicovideo.jp/user/49834887"
+
+  [[params.social]]
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UC_UPoBTzd57PVP5ssOh743g"
+
+  [[params.social]]
+    name = "keybase"
+    url = "https://keybase.io/leies_202/"
+
+  [[params.social]]
+    name = "email"
+    url = "mailto:lei@lei202.com"
+
+[menu]
+
+  [[Languages.ja.menu.main]]
+    name = "ブログ"
+    url = "https://blog.lei202.com/"
+    weight = 20
+
+  [[Languages.ja.menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 10
+
+  [[Languages.ja.menu.main]]
+    name = "Accounts"
+    url = "https://leies_202.keybase.pub/"
+    weight = 50
+
+  [[Languages.ja.menu.main]]
+    name = "創作"
+    url = "contents/"
+    weight = 30
+
+  [[Languages.ja.menu.main]]
+    name = "Una-Dic"
+    url = "una-dic/"
+    weight = 40
+
+  [[Languages.ja.menu.main]]
+    name = "Link"
+    url = "link/"
+    weight = 60
+
+[Languages]
+  [Languages.ja]
+    weight = 1
+  description = "レイエスのホームページ"
+    title = "lei202.com"
+  homeSubtitle = "Leiesことレイエスが適当に作ってるサイト。"
+
+
+  dateform        = "2006-01-02"
+  dateformShort   = "1月2日"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  [Languages.en]
+    weight = 2
+	homeSubtitle = "Ordinary human."
+	description = "Leies's homepage"
+
+  [[Languages.en.menu.main]]
+    name = "About+Profile"
+    url = "about/"
+    weight = 10
+
+  [[Languages.en.menu.main]]
+    name = "GitHubPages"
+    url = "https://Leies-202.github.io/en/"
+    weight = 50
+
+  [Languages.zh-hans]
+    weight = 3
+	homeSubtitle = "一个人滚来滚去"
+	title = "Leies"
+	description = "Leies网站"
+
+  [[Languages.zh-hans.menu.main]]
+    name = "关于+轮廓"
+    url = "about/"
+    weight = 10
+
+  [[Languages.zh-hans.menu.main]]
+    name = "链接(微博等......)"
+    url = "link/"
+    weight = 20
+
+  [[Languages.zh-hans.menu.main]]
+    name = "GitHubPages"
+    url = "https://Leies-202.github.io/zh-hans/"
+    weight = 50
