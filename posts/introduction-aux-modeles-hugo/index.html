@@ -1,0 +1,156 @@
+<!doctype html><html lang=ja-jp><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=theme-color content="#494f5c"><meta name=msapplication-TileColor content="#494f5c"><meta itemprop=name content="Introduction aux modèles (Hu)go"><meta itemprop=description content="Hugo utilise l'excellente librairie go html/template pour son moteur de modèles. c'est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c'est juste ce qu'il faut pour créer un bon site web statique. Si vous avez déjà utilisé d'autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
+Ce document est une introduction sur l'utilisation de Go templates."><meta itemprop=datePublished content="2014-04-02T00:00:00+00:00"><meta itemprop=dateModified content="2020-02-17T10:34:43+00:00"><meta itemprop=wordCount content="1501"><meta itemprop=image content="https://lei202.com/avater2.png"><meta itemprop=keywords content><meta property="og:title" content="Introduction aux modèles (Hu)go"><meta property="og:description" content="Hugo utilise l'excellente librairie go html/template pour son moteur de modèles. c'est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c'est juste ce qu'il faut pour créer un bon site web statique. Si vous avez déjà utilisé d'autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
+Ce document est une introduction sur l'utilisation de Go templates."><meta property="og:type" content="article"><meta property="og:url" content="https://lei202.com/posts/introduction-aux-modeles-hugo/"><meta property="og:image" content="https://lei202.com/avater2.png"><meta property="article:published_time" content="2014-04-02T00:00:00+00:00"><meta property="article:modified_time" content="2020-02-17T10:34:43+00:00"><meta property="og:site_name" content="lei202.com"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://lei202.com/avater2.png"><meta name=twitter:title content="Introduction aux modèles (Hu)go"><meta name=twitter:description content="Hugo utilise l'excellente librairie go html/template pour son moteur de modèles. c'est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c'est juste ce qu'il faut pour créer un bon site web statique. Si vous avez déjà utilisé d'autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
+Ce document est une introduction sur l'utilisation de Go templates."><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><title>Introduction aux modèles (Hu)go</title><link rel=stylesheet href=https://lei202.com/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin=anonymous></head><body id=page><header id=site-header class="animated slideInUp faster"><div class="hdr-wrapper section-inner"><div class=hdr-left><div class=site-branding><a href=https://lei202.com>lei202.com</a></div><nav class="site-nav hide-in-mobile"><a href=https://lei202.com/about/>About</a>
+<a href=https://blog.lei202.com/>ブログ</a>
+<a href=https://lei202.com/contents/>創作</a>
+<a href=https://lei202.com/una-dic/>Una-Dic</a>
+<a href=https://leies_202.keybase.pub/>Accounts</a>
+<a href=https://lei202.com/link/>Link</a></nav></div><div class="hdr-right hdr-icons"><span class="hdr-social hide-in-mobile"><a href=https://misskey.lei202.com/@lei202/ target=_blank rel="noopener me" title=Misskey><i class="fab fa-hubspot"></i></a><a href=https://github.com/Leies-202/ target=_blank rel="noopener me" title=Github><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77a5.44 5.44.0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg></a><a href=https://soundcloud.com/leies202/ target=_blank rel="noopener me" title=Soundcloud><i class="fab fa-soundcloud"></i></a><a href=https://www.nicovideo.jp/user/49834887 target=_blank rel="noopener me" title=Niconico><i class="fas fa-play"></i></a><a href=https://www.youtube.com/channel/UC_UPoBTzd57PVP5ssOh743g target=_blank rel="noopener me" title=Youtube><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78.0 00-1.94-2C18.88 4 12 4 12 4s-6.88.0-8.6.46a2.78 2.78.0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78.0 003.4 19c1.72.46 8.6.46 8.6.46s6.88.0 8.6-.46a2.78 2.78.0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a><a href=https://keybase.io/leies_202/ target=_blank rel="noopener me" title=Keybase><i class="fab fa-keybase"></i></a><a href=mailto:lei@lei202.com target=_blank rel="noopener me" title=Email><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></span><button id=menu-btn class=hdr-btn title=Menu><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></div></header><div id=mobile-menu class="animated fast"><ul><li><a href=https://lei202.com/about/>About</a></li><li><a href=https://blog.lei202.com/>ブログ</a></li><li><a href=https://lei202.com/contents/>創作</a></li><li><a href=https://lei202.com/una-dic/>Una-Dic</a></li><li><a href=https://leies_202.keybase.pub/>Accounts</a></li><li><a href=https://lei202.com/link/>Link</a></li></ul></div><main class="site-main section-inner animated fadeIn faster"><article class=thin><header class=post-header><div class=post-meta><span>2014-04-02</span></div><h1>Introduction aux modèles (Hu)go</h1></header><div class=content><p>Hugo utilise l'excellente librairie <a href=http://golang.org/>go</a> <a href=http://golang.org/pkg/html/template/>html/template</a> pour
+son moteur de modèles. c'est un moteur extrêmement léger qui offre un très petit
+nombre de fonctions logiques. À notre expérience, c'est juste ce qu'il faut pour
+créer un bon site web statique. Si vous avez déjà utilisé d'autre moteurs de
+modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de
+similitudes avec les modèles go.</p><p>Ce document est une introduction sur l'utilisation de Go templates. La
+<a href=http://golang.org/pkg/html/template/>documentation go</a> fourni plus de détails.</p><h2 id=introduction-aux-modèles-go>Introduction aux modèles Go<a href=#introduction-aux-modèles-go class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Go templates fournit un langage de modèles très simple. Il adhère à la
+conviction que les modèles ou les vues doivent avoir une logique des plus
+élémentaires. L'une des conséquences de cette simplicité est que les modèles
+seront plus rapides a être analysés.</p><p>Une caractéristique unique de Go templates est qu'il est conscient du contenu.
+Les variables et le contenu va être nettoyé suivant le contexte d'utilisation.
+Plus de détails sont disponibles dans la <a href=http://golang.org/pkg/html/template/>documentation go</a>.</p><h2 id=syntaxe-basique>Syntaxe basique<a href=#syntaxe-basique class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Les modèles en langage Go sont des fichiers HTML avec l'ajout de variables et
+fonctions.</p><p><strong>Les variables Go et les fonctions sont accessibles avec {{ }}</strong></p><p>Accès à une variable prédéfinie &ldquo;foo&rdquo;:</p><pre><code>{{ foo }}
+</code></pre><p><strong>Les paramètres sont séparés par des espaces</strong></p><p>Appel de la fonction add avec 1 et 2 en argument**</p><pre><code>{{ add 1 2 }}
+</code></pre><p><strong>Les méthodes et les champs sont accessibles par un point</strong></p><p>Accès au paramètre de la page &ldquo;bar&rdquo;</p><pre><code>{{ .Params.bar }}
+</code></pre><p><strong>Les parenthèses peuvent être utilisées pour grouper des éléments ensemble</strong></p><pre><code>{{ if or (isset .Params &quot;alt&quot;) (isset .Params &quot;caption&quot;) }} Caption {{ end }}
+</code></pre><h2 id=variables>Variables<a href=#variables class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Chaque modèle go a une structure (objet) mis à sa disposition. Avec Hugo, à
+chaque modèle est passé soit une page, soit une structure de nœud, suivant quel
+type de page vous rendez. Plus de détails sont disponibles sur la page des
+<a href=/layout/variables>variables</a>.</p><p>Une variable est accessible par son nom.</p><pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
+</code></pre><p>Les variables peuvent également être définies et appelées.</p><pre><code>{{ $address := &quot;123 Main St.&quot;}}
+{{ $address }}
+</code></pre><h2 id=functions>Functions<a href=#functions class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Go templace est livré avec quelques fonctions qui fournissent des
+fonctionnalités basiques. Le système de Go template fourni également un
+mécanisme permettant aux applications d'étendre les fonctions disponible. Les
+<a href=/layout/functions>fonctions de modèle Hugo</a> fourni quelques fonctionnalités
+supplémentaires que nous espérons qu'elles seront utiles pour vos sites web.
+Les functions sont appelées en utilisant leur nom suivi par les paramètres
+requis séparés par des espaces. Des fonctions de modèles ne peuvent pas être
+ajoutées sans recompiler Hugo.</p><p><strong>Exemple:</strong></p><pre><code>{{ add 1 2 }}
+</code></pre><h2 id=inclusions>Inclusions<a href=#inclusions class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Lorsque vous incluez un autre modèle, vous devez y passer les données qu'il sera
+en mesure d'accèder. Pour passer le contexte actuel, pensez à ajouter un point.
+La localisation du modèle sera toujours à partir du répertoire /layout/ dans
+Hugo.</p><p><strong>Exemple:</strong></p><pre><code>{{ template &quot;chrome/header.html&quot; . }}
+</code></pre><h2 id=logique>Logique<a href=#logique class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Go templates fourni les itérations et la logique conditionnèle des plus basique.</p><h3 id=itération>Itération<a href=#itération class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3><p>Comme en go, les modèles go utilisent fortement <em>range</em> pour itérer dans une
+map, un array ou un slice. Les exemples suivant montre différentes façons
+d'utiliser <em>range</em></p><p><strong>Exemple 1: En utilisant le context</strong></p><pre><code>{{ range array }}
+    {{ . }}
+{{ end }}
+</code></pre><p><strong>Exemple 2: En déclarant un nom de variable</strong></p><pre><code>{{range $element := array}}
+    {{ $element }}
+{{ end }}
+</code></pre><p><strong>Exemple 2: En déclarant un nom de varialbe pour la clé et la valeur</strong></p><pre><code>{{range $index, $element := array}}
+    {{ $index }}
+    {{ $element }}
+{{ end }}
+</code></pre><h3 id=conditions>Conditions<a href=#conditions class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3><p><em>If</em>, <em>else</em>, <em>with</em>, <em>or</em>, <em>&</em>, <em>and</em> fournissent la base pour la logique
+conditionnelle avec Go templates. Comme <em>range</em>, chaque déclaration est fermé
+avec <code>end</code>.</p><p>Go templates considère les valeurs suivante comme <em>false</em> :</p><ul><li>false</li><li>0</li><li>tout array, slice, map ou chaine d'une longueur de zéro</li></ul><p><strong>Exemple 1: If</strong></p><pre><code>{{ if isset .Params &quot;title&quot; }}&lt;h4&gt;{{ index .Params &quot;title&quot; }}&lt;/h4&gt;{{ end }}
+</code></pre><p><strong>Exemple 2: If -> Else</strong></p><pre><code>{{ if isset .Params &quot;alt&quot; }}
+    {{ index .Params &quot;alt&quot; }}
+{{else}}
+    {{ index .Params &quot;caption&quot; }}
+{{ end }}
+</code></pre><p><strong>Exemple 3: And & Or</strong></p><pre><code>{{ if and (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;))
+    (isset .Params &quot;attr&quot;)}}
+</code></pre><p><strong>Exemple 4: With</strong></p><p>Une manière alternative d'écrire un &ldquo;if&rdquo; et de référencer cette même valeur est
+d'utiliser &ldquo;with&rdquo;. Cela permet de remplacer le contexte <code>.</code> par cet valeur et
+saute le bloc si la variable est absente.</p><p>Le premier exemple peut être simplifié à ceci :</p><pre><code>{{ with .Params.title }}&lt;h4&gt;{{ . }}&lt;/h4&gt;{{ end }}
+</code></pre><p><strong>Exemple 5: If -> Else If</strong></p><pre><code>{{ if isset .Params &quot;alt&quot; }}
+    {{ index .Params &quot;alt&quot; }}
+{{ else if isset .Params &quot;caption&quot; }}
+    {{ index .Params &quot;caption&quot; }}
+{{ end }}
+</code></pre><h2 id=pipes><em>Pipes</em><a href=#pipes class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>L'un des composants le plus puissant de Go templates est la capacité d'empiler
+les action l'une après l'autre. Cela est fait en utilisant les <em>pipes</em>.
+Empruntés aux <em>pipes</em> unix, le concept est simple. Chaque sortie de <em>pipeline</em>
+devient l'entrée du <em>pipe</em> suivant.</p><p>À cause de la syntaxe très simple de Go templates, le <em>pipe</em> est essentiel pour
+être capable d'enchainer les appels de fonctions. Une limitation des <em>pipes</em>
+est qu'il ne peuvent fonctionner seulement avec une seule valeur et cette valeur
+devient le dernier paramètre du prochain <em>pipeline</em>.</p><p>Quelques exemples simple devrait vous aider à comprendre comment utiliser les
+<em>pipes</em>.</p><p><strong>Exemple 1 :</strong></p><pre><code>{{ if eq 1 1 }} Same {{ end }}
+</code></pre><p>est identique à</p><pre><code>{{ eq 1 1 | if }} Same {{ end }}
+</code></pre><p>Il semble étrange de placer le <em>if</em> à la fin, mais il fournit une bonne
+illustration de la façon d'utiliser les tuyaux.</p><p><strong>Exemple 2 :</strong></p><pre><code>{{ index .Params &quot;disqus_url&quot; | html }}
+</code></pre><p>Accès au paramètre de page nommé &ldquo;disqus_url&rdquo; et échappement du HTML</p><p><strong>Exemple 3 :</strong></p><pre><code>{{ if or (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;))
+    (isset .Params &quot;attr&quot;)}}
+Stuff Here
+{{ end }}
+</code></pre><p>Peut être réécrit en</p><pre><code>{{  isset .Params &quot;caption&quot; | or isset .Params &quot;title&quot; |
+    or isset .Params &quot;attr&quot; | if }}
+Stuff Here
+{{ end }}
+</code></pre><h2 id=contexte-alias-le-point>Contexte (alias. le point)<a href=#contexte-alias-le-point class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Le concept le plus facilement négligé pour comprendre les modèles go est que
+{{ . }} fait toujours référence au contexte actuel. Dans le plus haut niveau de
+votre modèle, ce sera l'ensemble des données mis à votre disposition. Dans une
+itération, ce sera la valeur de l'élément actuel. Enfin, dans une boucle, le
+contexte change. . ne fera plus référence aux données disponibles dans la page
+entière. Si vous avez besoin y d'accèder depuis l'intérieur d'une boucle, il est
+judicieux d'y définir comme variable au lieu de dépendre du contexte.</p><p><strong>Exemple:</strong></p><pre><code>{{ $title := .Site.Title }}
+{{ range .Params.tags }}
+&lt;li&gt; &lt;a href=&quot;{{ $baseurl }}/tags/{{ . | urlize }}&quot;&gt;
+    {{ . }}&lt;/a&gt; - {{ $title }} &lt;/li&gt;
+{{ end }}
+</code></pre><p>Notez que, une fois que nous sommes entrés dans la boucle, la valeur de
+{{ . }} a changée. Nous avons défini une variable en dehors de la boucle, afin
+d'y avoir accès dans la boucle.</p><h1 id=les-paramètres-dhugo>Les Paramètres d'Hugo<a href=#les-paramètres-dhugo class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h1><p>Hugo fournit l'option de passer des valeurs au modèle depuis la configuration du
+site, ou depuis les métadonnées de chaque partie du contenu. Vous pouvez définir
+n'importe quelle valeur de n'importe quel type (supporté par votre section
+liminaire / format de configuration) et les utiliser comme vous le souhaitez
+dans votre modèle.</p><h2 id=utiliser-les-paramètres-de-contenu-page>Utiliser les paramètres de contenu (page)<a href=#utiliser-les-paramètres-de-contenu-page class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Dans chaque partie du contenu, vous pouvez fournir des variables pour être
+utilisées par le modèle. Cela se passe dans la
+<a href=/content/front-matter>section liminaire</a>.</p><p>Un exemple de cela est utilisé par ce site de documentation. La plupart des
+pages bénéficient de la présentation de la table des matières. Quelques fois,
+la table des matières n'a pas beaucoup de sens. Nous avons défini une variable
+dans notre section liminaire de quelques pages pour désactiver la table des
+matières.</p><p>Ceci est un exemple de section liminaire :</p><pre><code>---
+title: &quot;Permalinks&quot;
+date: &quot;2013-11-18&quot;
+aliases:
+  - &quot;/doc/permalinks/&quot;
+groups: [&quot;extras&quot;]
+groups_weight: 30
+notoc: true
+---
+</code></pre><p>Ceci est le code correspondant dans le modèle :</p><pre><code>  {{ if not .Params.notoc }}
+    &lt;div id=&quot;toc&quot; class=&quot;well col-md-4 col-sm-6&quot;&gt;
+    {{ .TableOfContents }}
+    &lt;/div&gt;
+  {{ end }}
+</code></pre><h2 id=utiliser-les-paramètres-de-site-config>Utiliser les paramètres de site (config)<a href=#utiliser-les-paramètres-de-site-config class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2><p>Dans votre configuration de plus haut niveau (ex <code>config.yaml</code>), vous pouvez
+définir des paramètres de site, dont les valeurs vous seront accessibles.</p><p>Pour les instances, vous pourriez délarer :</p><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml>params<span class=p>:</span><span class=w>
+</span><span class=w>  </span>CopyrightHTML<span class=p>:</span><span class=w> </span><span class=s2>&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span><span class=w>
+</span><span class=w>  </span>TwitterUser<span class=p>:</span><span class=w> </span><span class=s2>&#34;spf13&#34;</span><span class=w>
+</span><span class=w>  </span>SidebarRecentLimit<span class=p>:</span><span class=w> </span><span class=m>5</span><span class=w>
+</span></code></pre></div><p>Avec un pied de page, vous devriez déclarer un <code>&lt;footer></code> qui est affiché
+seulement si le paramètre <code>CopyrightHTML</code> est déclaré, et si il l'est, vous
+devriez le déclarer comme HTML-safe, afin d'éviter d'échapper les entités HTML.
+Cela vous permettra de le modifier facilement dans votre configuration au lieu
+de le chercher dans votre modèle.</p><pre><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
+&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
+&lt;/footer&gt;{{end}}
+</code></pre><p>Une alternative au &ldquo;if&rdquo; et d'appeler la même valeur est d'utiliser &ldquo;with&rdquo;. Cela
+modifiera le contexte et passera le bloc si la variable est absente :</p><pre><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
+&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
+&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
+ alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;{{end}}
+</code></pre><p>Enfin, si vous souhaitez extraire des &ldquo;constantes magiques&rdquo; de vos mises en
+page, vous pouvez le faire comme dans l'exemple suivant :</p><pre><code>&lt;nav class=&quot;recent&quot;&gt;
+  &lt;h1&gt;Recent Posts&lt;/h1&gt;
+  &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
+    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+  {{end}}&lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre></div><hr class=post-end><footer class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>map[name:Michael Henderson]</p><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>1501 文字</p><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2014-04-02 00:00</p></footer></article><div class="post-nav thin"><a class=next-post href=https://lei202.com/posts/hugoisforlovers/><span class=post-nav-label><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>&nbsp;次の投稿</span><br><span>Getting Started with Hugo</span></a>
+<a class=prev-post href=https://lei202.com/posts/migrate-from-jekyll/><span class=post-nav-label>前の投稿&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span><br><span>Migrate to Hugo from Jekyll</span></a></div><div id=comments class=thin><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"lei202-com"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></main><footer id=site-footer class="section-inner thin animated fadeIn faster"><p>&copy; 2020 <a href=https://lei202.com>Leies</a> &#183; <a href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank rel=noopener>CC BY-NC 4.0</a></p><br>苦き心に甘み出る時、それはきっとサッカリン<p>Made with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> &#183; Theme <a href=https://github.com/Track3/hermit target=_blank rel=noopener>Hermit</a> &#183; <a href=https://lei202.com/posts/index.xml target=_blank title=rss><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a><a href=/>ja</a>/<a href=/en>en</a>/<a href=/zh-hans>zh-hans</a>/<a href=https://github.com/Leies-202/leies-site-2/issues>issues(サイト不具合･要望等はこちら)</a></p><hr><p itemprop="headline name" class=ps-label>広告</p><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block data-ad-client=ca-pub-3343546386589601 data-ad-slot=1281259130 data-ad-format=horizontal data-full-width-responsive=false></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></footer><script src=https://lei202.com/js/bundle.min.77c21321149898c8197435b1c21ba0cae3692b63dcd9cc845a8e169ba850282d.js integrity="sha256-d8ITIRSYmMgZdDWxwhugyuNpK2Pc2cyEWo4Wm6hQKC0=" crossorigin=anonymous></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-87433732-12','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
