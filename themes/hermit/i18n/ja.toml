@@ -1,0 +1,49 @@
+# Translations for japanese
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# 404.html
+#
+[notFound]
+other = "お探しのページは見つかりませんでした…"
+
+[notaccess]
+other = "あなたはこのページにアクセスする許可がありません。お戻りください。"
+
+[home]
+other = "TOP"
+
+[archives]
+other = "Posts"
+
+# posts/single.html
+#
+[wordCount]
+other = "{{ .WordCount }} 文字"
+
+[tableOfContents]
+other = "目次"
+
+[newer]
+other = "次の投稿"
+
+[older]
+other = "前の投稿"
+
+# partials/header.html
+#
+[menu]
+other = "Menu"
+
+[featuredImage]
+other = "Featured Image"
+
+# index.html
+#
+[disclaimer]
+other = "免責事項"
+
+[privacy]
+other = "プライバシーポリシー"
+
+[issues]
+other = "issues(サイト不具合･要望等はこちら)"
