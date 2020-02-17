@@ -1,0 +1,8 @@
+SiteGuard_User_ExcludeSig all
+
+<Files ~ "^\.ht">
+deny from all
+</Files>
+
+# Redirect
+RedirectMatch 301 /others/(.*) https://eizi2002.ie-t.net/contents.html

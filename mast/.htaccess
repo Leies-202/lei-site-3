@@ -1,0 +1,6 @@
+ErrorDocument 410 /index.html
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/index.html$
+RewriteCond %{REQUEST_URI} !^/gone.png$
+RewriteRule ^.*$ "-" [G,NC]

@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/leies_202
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lei202.com
+  * I am leies_202 (https://keybase.io/leies_202) on keybase.
+  * I have a public key with fingerprint 0F07 5FAD 04E2 A849 FC38  5B83 2F93 8C0C F28D 4925
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209f136958470abc34297a81e1ce55c315afa18788e5453629c51de36d8cdedc460a",
+      "fingerprint": "0f075fad04e2a849fc385b832f938c0cf28d4925",
+      "host": "keybase.io",
+      "key_id": "2f938c0cf28d4925",
+      "kid": "01012aa9352bcb4f54850e4ae951220ce1fe6df0d0c103b273d3ed30d8df4ab9d6b80a",
+      "uid": "46a4be2157838b5bb5282723ac36bd19",
+      "username": "leies_202"
+    },
+    "merkle_root": {
+      "ctime": 1563924531,
+      "hash_meta": "f246370379ab2510316e48a4072d10e2340d544cb58b59a705084bd2e4a35604",
+      "seqno": 5837483
+    },
+    "revoke": {
+      "sig_ids": [
+        "89c1c4a2336cbe77f873cd41f8e01e81a4a250a56a595ec28b744cc37ebff8080f"
+      ]
+    },
+    "service": {
+      "hostname": "lei202.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1563924573,
+  "expire_in": 157680000,
+  "prev": "8136bebe1401df8c47770e34b3f834bafe900145b26cb1fdb6c61fa9ff771f42",
+  "seqno": 39,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMP+AnicbZN/TFZVGMcBE+RVp46Rxty0u9HCAM+555x7z311rqnNMi1nWVv69nrO
+vefCjZf3xfe9vIjAcJo1hgYMdbqiaaIkkPMH8x+dgmGFGmiUqQ3InKWCVtD8MUk6
+L8u5te4f9+6e+32+z+f53nPaJ46J88TPrt08YXDLK+nxZ08VFsb59B2+EoWHrGLF
+W6LkidGHCFgi4vrzHEvxKgCqwLAh0gxCsQ4YNxFWDZ1RKKApCDERJMxmkOqUCoIJ
+0lTDJNASSLOoaQnLxBpgSqZiO8EcES4IO0E3ZmsDndjMAliojGLDNhElnCLVNhA1
+gWmr1MKGSmRhbigSq5BwnEVEthOSa/LFP4r3P/rH3JKcMQMRlZsc2wRTAgRmwiBQ
+VYEpoC00ywYWMCFAXNWRhYSFgEUtGzNuWBqno9yFo3ZYY5gLFRKdIsoJ50Slqq4i
+ZiKNW9CICSMiHGT5QqoDwhERvwpUpSxTyRfhvIDwh0MhN5au6ToxDSQaMlSZF5QT
+skiuP1+4TJbaKtaQDpBuMK4SiQY1gSnDQFctCISKMLAIxiYnEsNgOiCAYm6pcjRE
+NIAlSESsCYYUL6FIxxRJgrCIhvJErHnEyZG5RRTvSoUaJjQxUxHSTC503aY6Mi0M
+bSoAFBQy+Y0ARjRGDCJMlXJdtjWRLrhtU0CBrfjKYs3CUcccNY/9qCcByOmzzVC+
+5CkIh9yQGQrI9VzXLYh4Y6m4xQUxYZHg/n8t/NwJWnKTyIqoCEecUFCmJJX/CUxH
+mYpYW+CEhd+JKYiuUSCvWB8RlZZUblYuuIAYQMumJtZ1HQiEObKpvDNbGABATLgq
+B4e2xTVTgzYzbFvXoY3VJwkiQ3KyHOkpcwsytzAslLJTbaueiov3xCWOTYidnjhP
+8uTHZ2pn1aSRnOvjNynzN7lPFz6szRqsqd3euD7gKbtW+uDRpJ/SJ3vGRlnH3gqn
+a2r9n8NG9a8N1b3lcwcayg9c21YRPLTstQkb76IVnydVvTn0qKQ3I6VVAXW+lgsg
+q1kxSjvXzs82OpuXLsp6ddXfJ69VpK6KO6Lk7+lZ5sXT+PnDddcPXPLc6D5jpivv
+vr5i4up5fW3rKzvO+W57uxofTLmVsb8otb7fPy7x53j4iW+k4s78t/ccqUHJVt+S
+F8Xi+xcHN1w4My4tsbK7YevAxaIl+xZmpbbsyX3po2e+6R389J20y+OzV1b4Luwd
+tze9O62+wuHJZTNLD7YcZdFL5f29WTtnbp/x/f57dda6pF96CtalnsxuHbiqjTSk
+ZCzcHdgR39n+bdP9qu6OqHtz4+2Uqy3v7S8NTp3z7Kl598qOFCewzoOtZ0uWHk7f
+NTyQeC9LO3C8JGmMPvXKrhMTjYU3E0r6zq9N23ror+O/N5/rbet0pnThtz5u21L3
+4Y19azI3f93z/MXTRZULmgKNv9nR8+6ZBV8MJtx92N/jvjC0uW961Q7aVjsteXdw
+17HFlZ6u7+40DX2wYTi/EnQEUiId0/uHZkG35qu5M7ofXPmhwzy27uXl6+//2NI6
+rXh5K5jlC3159rPe6jvgVuPI6RXl1TmgZnXR+xkrl+xrX+T9o2fOc0e724fnxp+Y
+fXl8SnPTounwjYDvH2YcB0Q=
+=BnTJ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/leies_202
+
+==================================================================
