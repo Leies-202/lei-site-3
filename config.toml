@@ -88,7 +88,7 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
 [menu]
 
   [[Languages.ja.menu.main]]
-    name = "ブログ"
+    name = "Blog"
     url = "https://blog.lei202.com/"
     weight = 20
 
@@ -103,7 +103,7 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
     weight = 50
 
   [[Languages.ja.menu.main]]
-    name = "創作"
+    name = "Create"
     url = "contents/"
     weight = 30
 
