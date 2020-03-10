@@ -94,7 +94,7 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
 
   [[Languages.ja.menu.main]]
     name = "Me"
-    url = "httpe://me.lei202.com/"
+    url = "https://me.lei202.com/"
     weight = 10
 
   [[Languages.ja.menu.main]]
