@@ -90,37 +90,37 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
   [[Languages.ja.menu.main]]
     name = "Blog"
     url = "https://blog.lei202.com/"
-    weight = 20
+    weight = 30
 
   [[Languages.ja.menu.main]]
     name = "Me"
     url = "httpe://me.lei202.com/"
-    weight = 05
+    weight = 10
 
   [[Languages.ja.menu.main]]
     name = "About"
     url = "about/"
-    weight = 10
+    weight = 20
 
   [[Languages.ja.menu.main]]
     name = "Accounts"
     url = "https://leies_202.keybase.pub/"
-    weight = 50
+    weight = 60
 
   [[Languages.ja.menu.main]]
     name = "Create"
     url = "contents/"
-    weight = 30
+    weight = 40
 
   [[Languages.ja.menu.main]]
     name = "Una-Dic"
     url = "una-dic/"
-    weight = 40
+    weight = 50
 
   [[Languages.ja.menu.main]]
     name = "Link"
     url = "link/"
-    weight = 60
+    weight = 70
 
 [Languages]
   [Languages.ja]
