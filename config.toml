@@ -88,14 +88,14 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
 [menu]
 
   [[Languages.ja.menu.main]]
-    name = "Blog"
+    name = "Old-Blog"
     url = "https://blog.lei202.com/"
-    weight = 30
+    weight = 40
 
   [[Languages.ja.menu.main]]
     name = "note"
     url = "https://note.com/lei202/"
-    weight = 40
+    weight = 30
 
   [[Languages.ja.menu.main]]
     name = "Me"
