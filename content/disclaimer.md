@@ -8,7 +8,7 @@ date: 2019-06-16T10:47:43+09:00
 
 管理者名： Leies(読み:レイエス)
 
-[lei202.com](https://lei202.com/)ドメイン内のサイト(このサイト､[PSO2日記](https://pso.lei202.com/)､[GitHubPages](https://me.kei202.com/))、[eizi2002@novels](https://enovels.wpblog.jp/)(以下まとめて｢当サイト｣とします)における免責事項は、下記の通りです。
+Misskey-leiを除いた[lei202.com](https://lei202.com/)ドメイン内のサイト(当サイト､[PSO2日記](https://pso.lei202.com/)､[GitHubPages](https://me.lei202.com/)、[lnovels](https://novels.lei202.com/))(以下｢当サイト｣とします)における免責事項は、下記の通りです。
 
 ___
 
