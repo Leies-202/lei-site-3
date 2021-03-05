@@ -47,7 +47,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
   bgImg = "avater2.png"  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
-gitUrl = "https://github.com/lei202/leies-site-2/"
+gitUrl = "https://github.com/lei202/lei-site-3/"
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
@@ -59,7 +59,7 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
   # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
     name = "misskey"
-    url = "https://misskey.lei202.com/@lei202/"
+    url = "https://mk.lei202.com/@lei202/"
 
   [[params.social]]
     name = "github"
@@ -170,8 +170,3 @@ gitUrl = "https://github.com/lei202/leies-site-2/"
     name = "链接(微博等......)"
     url = "link/"
     weight = 20
-
-  [[Languages.zh-hans.menu.main]]
-    name = "GitHubPages"
-    url = "https://Leies-202.github.io/zh-hans/"
-    weight = 50
